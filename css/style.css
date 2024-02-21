@@ -16,6 +16,11 @@ ul, ol {
     padding-left: 0;
 }
 
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -296,12 +301,8 @@ footer p {
 }
 
 .team-container {
-    width: 232px;
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
     padding: 32px 0;
-    border: 1px solid #e7e9fc;
     
 }
 /* ================= /Section team style ================= */
@@ -323,9 +324,6 @@ footer p {
 }
 
 .portfolio-container {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
@@ -351,7 +349,6 @@ footer p {
 }
 
 .portfolio-list-item {
-    border: 1px solid #e7e9fc;
     width: calc((100% - 48px) / 3);
 }
 /* ================= /Section portfolio style ================= */
@@ -369,8 +366,6 @@ footer p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding-top: 70px;
-    padding-bottom: 24px;
     display: inline-block;
     margin-bottom: 16px;
 }
