@@ -184,16 +184,8 @@ color: #404BBF;
     padding-top: 24px;
     padding-bottom: 24px;
     display: block;
-    
-
-}
-
-.mail-link {
     transition: color cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.phone-link {
-    transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -305,6 +297,7 @@ color: #404BBF;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
 }
 
 .icons-class {
@@ -354,9 +347,17 @@ color: #404BBF;
 .team-list-item {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
-    width: calc((100% - 3 * 24px) / 4);
-    
-    
+    box-shadow:  1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    width: calc((100% - 3 * 24px) / 4);   
+}
+.team-list-social-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-list-social-link:hover,
+.team-list-social-link:focus {
+    background-color: #404bbf;
 }
 
 .team-p {
