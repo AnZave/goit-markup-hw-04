@@ -143,8 +143,24 @@ footer p {
     padding-top: 24px;
     padding-bottom: 24px;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.current {
+position: relative;
+color: #404BBF;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404BBF;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+}
 .menu-link:hover,
 .menu-link:focus {
     color: #404bbf;
@@ -170,6 +186,7 @@ footer p {
     padding-top: 24px;
     padding-bottom: 24px;
     display: block;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -184,7 +201,14 @@ footer p {
 /*================= Hero section style =================*/
 .hero-section {
     background-color: #2E2F42;
-    
+    background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)), 
+     url("/images/bg/people-office.jpg");
+    background-size: cover;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-headline {
@@ -242,6 +266,7 @@ footer p {
 
 .level-headline {
     margin-bottom: 8px;
+    margin-top: 8px;
 }
 .section-benefits {
     padding-top: 120px;
@@ -260,6 +285,44 @@ footer p {
     clip-path: inset(100%);
     margin: -1px;
     
+}
+
+.rectangel-ico {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-class {
+    fill: #4d5ae5;
+}
+.team-list-social
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+.team-list-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    gap: 24px;
+}
+
+.svg-icon-social {
+    fill: #f4f4fd;
+    stroke: none;
 }
 /* ================= /Section benefits style ================= */
 
@@ -349,7 +412,32 @@ footer p {
 }
 
 .portfolio-list-item {
+    
     width: calc((100% - 48px) / 3);
+    
+}
+.portfolio-list-item-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.potfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+}
+.portfolio-list-item-img:hover .potfolio-overlay {
+    transform: translateY(0%);
 }
 /* ================= /Section portfolio style ================= */
 
@@ -388,4 +476,10 @@ footer p {
 padding-top: 100px;
 padding-bottom: 100px;
 }
+
+.footer-social-container {
+    display: flex;
+    
+}
+
 /* ================= /Section footer style ================= */
