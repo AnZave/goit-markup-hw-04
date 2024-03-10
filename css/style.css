@@ -188,8 +188,16 @@ color: #404BBF;
     padding-top: 24px;
     padding-bottom: 24px;
     display: block;
-    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+    
 
+}
+
+.mail-link {
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-link {
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
